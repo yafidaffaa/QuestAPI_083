@@ -15,7 +15,7 @@ import androidx.compose.ui.Modifier
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun CustomTopAppBar(
+fun TopAppBar(
     title: String,
     canNavigateBack: Boolean,
     navigateUp: () -> Unit,
