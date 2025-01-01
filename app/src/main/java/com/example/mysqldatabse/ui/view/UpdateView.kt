@@ -46,7 +46,7 @@ fun EditScreen(
                 title = DestinasiEdit.titleRes,
                 canNavigateBack = true,
                 scrollBehavior = scrollBehavior,
-                navigateUp = onBack,
+                navigateUp = onBack
             )
         }
     ){padding ->

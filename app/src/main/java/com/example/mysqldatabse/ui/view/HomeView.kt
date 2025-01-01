@@ -69,7 +69,7 @@ fun HomeScreen(
                 title = DestinasiHome.titleRes,
                 canNavigateBack = false,
                 scrollBehavior = scrollBehavior,
-                onRefresh = {
+                navigateUp = {
                     viewModel.getMhs()
                 }
             )
@@ -115,7 +115,7 @@ fun HomeStatus(
         is HomeUiState.Success ->
             if (homeUiState.mahasiswa.isEmpty()){
                 return Box(modifier = modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
-                    Text(text = "Tidak ada data Kontak" )
+                    Text(text = "Tidak ada data Mahasiswa" )
                 }
             }else {
                 MhsLayout(

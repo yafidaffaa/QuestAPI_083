@@ -31,7 +31,7 @@ fun PengelolaHalaman(navController: NavHostController = rememberNavController())
             HomeScreen(
                 navigateToItemEntry = { navController.navigate(DestinasiEntry.route) },
                 onDetailClick = {
-
+                    navController.navigate("${DestinasiDetail.route}/$it")
                 }
             )
         }

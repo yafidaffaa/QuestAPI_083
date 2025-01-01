@@ -31,6 +31,7 @@ import androidx.compose.ui.unit.dp
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.mysqldatabse.ui.navigasi.DestinasiNavigasi
+import com.example.mysqldatabse.ui.viewmodel.DetailViewModel
 import com.example.mysqldatabse.ui.viewmodel.PenyediaViewModel
 
 object DestinasiDetail : DestinasiNavigasi {
@@ -49,7 +50,7 @@ fun DetailScreen(
     onDeleteClick: (String) -> Unit = { },
     onBackClick: () -> Unit = { },
     modifier: Modifier = Modifier,
-    viewModel: ViewModel = viewModel(factory = PenyediaViewModel.Factory)
+    viewModel: DetailViewModel = viewModel(factory = PenyediaViewModel.Factory)
 ) {
     val mahasiswa = viewModel.uiState.detailUiEvent
 

@@ -19,7 +19,7 @@ fun TopAppBar(
     title: String,
     canNavigateBack: Boolean,
     navigateUp: () -> Unit,
-    onRefrash: () -> Unit,
+//    onRefrash: () -> Unit,
     modifier: Modifier = Modifier,
     scrollBehavior: TopAppBarScrollBehavior? = null
 
@@ -31,7 +31,7 @@ fun TopAppBar(
                 imageVector = Icons.Default.Refresh,
                 contentDescription = "",
                 modifier = Modifier.clickable {
-                    onRefrash()
+                    navigateUp()
                 })
         },
         modifier = modifier,
